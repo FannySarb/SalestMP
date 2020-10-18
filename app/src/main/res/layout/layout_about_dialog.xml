@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingTop="15dp"
+    android:layout_margin="15dp">
+
+
+    <TextView
+        android:id="@+id/app_version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="22sp"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:textStyle="bold"
+        style="@style/TextAppearance.AppCompat.Body1"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"/>
+
+    <TextView
+        android:id="@+id/feature_request"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="Benemérita Universidad Autónoma de Puebla"
+        android:textColor="#140457"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/feature_request2"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="Facultad de Ciencias de la Computación"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/feature_request3"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="Programación de Dispositivos Móviles"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/feature_request"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="Dylan Salomón Lozada Mendoza y Estefania Sarmiento Barrios"
+        android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dismiss_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@android:string/ok"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:layout_gravity="right"
+            android:paddingBottom="10dp"
+            android:paddingRight="15dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:background="?selectableItemBackgroundBorderless"/>
+
+</LinearLayout>
