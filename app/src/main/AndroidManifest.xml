@@ -23,7 +23,7 @@
         tools:replace="android:allowBackup, android:label">
 
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.splash"
             android:label="Salest Music Player"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -70,6 +70,10 @@
 
         <activity
             android:name=".activities.SettingsActivity"
+            android:theme="@style/AppThemeNormalLight" />
+
+        <activity
+            android:name=".activities.MainActivity"
             android:theme="@style/AppThemeNormalLight" />
 
         <activity
