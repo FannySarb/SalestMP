@@ -87,7 +87,7 @@ public class SearchActivity extends BaseActivity implements SearchView.OnQueryTe
         mSearchView = (SearchView) MenuItemCompat.getActionView(menu.findItem(R.id.menu_search));
 
         mSearchView.setOnQueryTextListener(this);
-        mSearchView.setQueryHint(getString(R.string.search_library));
+        mSearchView.setQueryHint(getString(R.string.searchca));
 
         mSearchView.setIconifiedByDefault(false);
         mSearchView.setIconified(false);
