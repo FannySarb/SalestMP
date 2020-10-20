@@ -39,12 +39,12 @@ public class AddPlaylistDialog extends DialogFragment {
 
         final List<Playlist> playlists = PlaylistLoader.getPlaylists(getActivity(), false);
         CharSequence[] chars = new CharSequence[playlists.size() + 1];
-        chars[0] = "Create new playlist";
+        chars[0] = "Crear nueva Playlist";
 
         for (int i = 0; i < playlists.size(); i++) {
             chars[i + 1] = playlists.get(i).name;
         }
-        return new MaterialDialog.Builder(getActivity()).title("Add to playlist").items(chars).itemsCallback(new MaterialDialog.ListCallback() {
+        return new MaterialDialog.Builder(getActivity()).title("Añadir a playlist").items(chars).itemsCallback(new MaterialDialog.ListCallback() {
             @Override
             public void onSelection(MaterialDialog dialog, View itemView, int which, CharSequence text) {
                 long[] songs = getArguments().getLongArray("songs");
