@@ -137,7 +137,7 @@
     <string name="durationformatlong" translatable="false"><xliff:g id="format">%1$d:%2$02d:%3$02d</xliff:g></string>
 
     <string name="play">Play</string>
-    <string name="add_to_playlist">Add to playlist</string>
+    <string name="add_to_playlist">Agregar a Playlist</string>
     <string name="go_to_album">Ir al Álbum</string>
     <string name="go_to_artist">Go to artist</string>
     <string name="add_to_queue">Add to queue</string>

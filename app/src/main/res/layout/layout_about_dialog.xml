@@ -38,7 +38,7 @@
         android:paddingLeft="15dp"
         android:text="Benemérita Universidad Autónoma de Puebla"
         android:textColor="#140457"
-        android:textSize="24sp"
+        android:textSize="26sp"
         android:textStyle="bold" />
 
     <TextView
@@ -66,7 +66,7 @@
         android:textSize="16sp" />
 
     <TextView
-        android:id="@+id/feature_request"
+        android:id="@+id/feature_request4"
         style="@style/TextAppearance.AppCompat.Body1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -74,8 +74,33 @@
         android:clickable="true"
         android:gravity="center"
         android:paddingLeft="15dp"
-        android:text="Dylan Salomón Lozada Mendoza y Estefania Sarmiento Barrios"
+        android:textStyle="bold"
+        android:text="Desarrolladores:"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/feature_request5"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="Dylan Salomón Lozada Mendoza"
         android:textSize="16sp" />
+    <TextView
+        android:id="@+id/feature_request8"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:text="Estefania Sarmiento Barrios"
+        android:textSize="16sp" />
+
 
         <TextView
             android:id="@+id/dismiss_dialog"

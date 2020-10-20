@@ -276,9 +276,9 @@ public class BaseActivity extends ATEActivity implements ServiceConnection, Musi
                     R.id.media_route_menu_item);
         }
 
-        if (!TimberUtils.hasEffectsPanel(BaseActivity.this)) {
+        /*if (!TimberUtils.hasEffectsPanel(BaseActivity.this)) {
             menu.removeItem(R.id.action_equalizer);
-        }
+        }*/
         ATE.applyMenu(this, getATEKey(), menu);
         return true;
     }
@@ -305,9 +305,9 @@ public class BaseActivity extends ATEActivity implements ServiceConnection, Musi
             case R.id.action_search:
                 NavigationUtils.navigateToSearch(this);
                 return true;
-            case R.id.action_equalizer:
+            /*case R.id.action_equalizer:
                 NavigationUtils.navigateToEqualizer(this);
-                return true;
+                return true;*/
 
         }
         return super.onOptionsItemSelected(item);

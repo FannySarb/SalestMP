@@ -168,9 +168,9 @@ public class SearchAdapter extends BaseSongAdapter<SearchAdapter.ItemHolder> {
                             case R.id.popup_song_play:
                                 MusicPlayer.playAll(mContext, song, 0, -1, TimberUtils.IdType.NA, false);
                                 break;
-                            case R.id.popup_song_play_next:
+                            /*case R.id.popup_song_play_next:
                                 MusicPlayer.playNext(mContext, song, -1, TimberUtils.IdType.NA);
-                                break;
+                                break;*/
                             case R.id.popup_song_goto_album:
                                 NavigationUtils.navigateToAlbum(mContext, ((Song) searchResults.get(position)).albumId, null);
                                 break;
@@ -190,7 +190,7 @@ public class SearchAdapter extends BaseSongAdapter<SearchAdapter.ItemHolder> {
                 menu.inflate(R.menu.popup_song);
                 //Hide these because they aren't implemented
                 menu.getMenu().findItem(R.id.popup_song_delete).setVisible(false);
-                menu.getMenu().findItem(R.id.popup_song_share).setVisible(false);
+                //menu.getMenu().findItem(R.id.popup_song_share).setVisible(false);
                 menu.show();
             }
         });

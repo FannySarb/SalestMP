@@ -152,11 +152,11 @@ public class SongsListAdapter extends BaseSongAdapter<SongsListAdapter.ItemHolde
                             case R.id.popup_song_play:
                                 MusicPlayer.playAll(mContext, songIDs, position, -1, TimberUtils.IdType.NA, false);
                                 break;
-                            case R.id.popup_song_play_next:
+                            /*case R.id.popup_song_play_next:
                                 long[] ids = new long[1];
                                 ids[0] = arraylist.get(position).id;
                                 MusicPlayer.playNext(mContext, ids, -1, TimberUtils.IdType.NA);
-                                break;
+                                break;*/
                             case R.id.popup_song_goto_album:
                                 NavigationUtils.goToAlbum(mContext, arraylist.get(position).albumId);
                                 break;
@@ -171,9 +171,9 @@ public class SongsListAdapter extends BaseSongAdapter<SongsListAdapter.ItemHolde
                             case R.id.popup_song_addto_playlist:
                                 AddPlaylistDialog.newInstance(arraylist.get(position)).show(mContext.getSupportFragmentManager(), "ADD_PLAYLIST");
                                 break;
-                            case R.id.popup_song_share:
+                            /*case R.id.popup_song_share:
                                TimberUtils.shareTrack(mContext, arraylist.get(position).id);
-                                break;
+                                break;*/
                             case R.id.popup_song_delete:
                                 long[] deleteIds = {arraylist.get(position).id};
                                 TimberUtils.showDeleteDialog(mContext,arraylist.get(position).title, deleteIds, SongsListAdapter.this, position);
