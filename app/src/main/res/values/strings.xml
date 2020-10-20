@@ -147,11 +147,11 @@
     <string name="delete_from_device">Delete from device</string>
     <string name="remove_from_queue">Remove from queue</string>
 
-    <string name="nothing_found">Nothing found</string>
+    <string name="nothing_found">Sin Resultados</string>
     <string name="folders">Folders</string>
     <string name="select_storage">Select storage</string>
 
-    <string name="lastfm_pref">Login to LastFM to scrobble</string>
+
     <string name="lastfm_login_failture">Failed to Login</string>
     <string name="lastfm_login">Login to LastFM</string>
     <string name="lastfm_loged_in">Logged in as %s</string>
