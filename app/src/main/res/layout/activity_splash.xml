@@ -22,6 +22,7 @@
             android:id="@+id/mp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/rez"
             android:gravity="center"
             android:text="Music Player"
             android:textColor="#FFFFFF"
@@ -32,8 +33,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="200dp"
+            android:fontFamily="@font/rez"
             android:gravity="center"
-            android:text="by\n Dylan y Estefania"
+            android:text="Dylan y Estefania"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
 
