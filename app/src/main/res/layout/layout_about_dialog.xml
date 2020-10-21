@@ -37,8 +37,8 @@
         android:gravity="center"
         android:paddingLeft="15dp"
         android:text="Benemérita Universidad Autónoma de Puebla"
-        android:textColor="#140457"
-        android:textSize="26sp"
+        android:textColor="#fff"
+        android:textSize="20dp"
         android:textStyle="bold" />
 
     <TextView
@@ -51,7 +51,7 @@
         android:gravity="center"
         android:paddingLeft="15dp"
         android:text="Facultad de Ciencias de la Computación"
-        android:textSize="18sp" />
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/feature_request3"
@@ -63,7 +63,7 @@
         android:gravity="center"
         android:paddingLeft="15dp"
         android:text="Programación de Dispositivos Móviles"
-        android:textSize="16sp" />
+        android:textSize="16dp" />
 
     <TextView
         android:id="@+id/feature_request4"
@@ -76,7 +76,7 @@
         android:paddingLeft="15dp"
         android:textStyle="bold"
         android:text="Desarrolladores:"
-        android:textSize="18sp" />
+        android:textSize="18dp" />
 
     <TextView
         android:id="@+id/feature_request5"
@@ -88,7 +88,7 @@
         android:gravity="center"
         android:paddingLeft="15dp"
         android:text="Dylan Salomón Lozada Mendoza"
-        android:textSize="16sp" />
+        android:textSize="16dp" />
     <TextView
         android:id="@+id/feature_request8"
         style="@style/TextAppearance.AppCompat.Body1"
@@ -99,7 +99,7 @@
         android:gravity="center"
         android:paddingLeft="15dp"
         android:text="Estefania Sarmiento Barrios"
-        android:textSize="16sp" />
+        android:textSize="16dp" />
 
 
         <TextView

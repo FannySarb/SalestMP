@@ -125,11 +125,11 @@ public class BaseQueueAdapter extends RecyclerView.Adapter<BaseQueueAdapter.Item
                                 break;
                             /*case R.id.popup_song_share:
                                 TimberUtils.shareTrack(mContext, arraylist.get(position).id);
-                                break;*/
+                                break;*
                             case R.id.popup_song_delete:
                                 long[] deleteIds = {arraylist.get(position).id};
                                 TimberUtils.showDeleteDialog(mContext,arraylist.get(position).title, deleteIds, BaseQueueAdapter.this, position);
-                                break;
+                                break;*/
                         }
                         return false;
                     }

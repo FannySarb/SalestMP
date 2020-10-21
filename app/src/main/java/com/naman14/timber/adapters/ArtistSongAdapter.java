@@ -136,10 +136,10 @@ public class ArtistSongAdapter extends BaseSongAdapter<ArtistSongAdapter.ItemHol
                             /*case R.id.popup_song_share:
                                 TimberUtils.shareTrack(mContext, arraylist.get(position + 1).id);
                                 break;*/
-                            case R.id.popup_song_delete:
+                            /*case R.id.popup_song_delete:
                                 long[] deleteIds = {arraylist.get(position + 1).id};
                                 TimberUtils.showDeleteDialog(mContext,arraylist.get(position + 1).title, deleteIds, ArtistSongAdapter.this, position + 1);
-                                break;
+                                break;*/
                         }
                         return false;
                     }
