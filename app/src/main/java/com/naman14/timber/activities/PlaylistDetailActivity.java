@@ -341,10 +341,10 @@ public class PlaylistDetailActivity extends BaseActivity implements ATEActivityT
 
     private void showDeletePlaylistDialog() {
         new MaterialDialog.Builder(this)
-                .title("Delete playlist?")
-                .content("Are you sure you want to delete playlist " + playlistname.getText().toString() + " ?")
-                .positiveText("Delete")
-                .negativeText("Cancel")
+                .title("Borrar playlist")
+                .content("¿Seguro que quieres borrar la playlist " + playlistname.getText().toString() + " ?")
+                .positiveText("Si")
+                .negativeText("No")
                 .onPositive(new MaterialDialog.SingleButtonCallback() {
                     @Override
                     public void onClick(@NonNull MaterialDialog dialog, @NonNull DialogAction which) {
