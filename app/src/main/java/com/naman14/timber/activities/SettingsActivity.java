@@ -57,7 +57,7 @@ public class SettingsActivity extends BaseThemedActivity implements ColorChooser
         action = getIntent().getAction();
 
         if (action.equals(Constants.SETTINGS_STYLE_SELECTOR)) {
-            getSupportActionBar().setTitle(R.string.now_playing);
+            //getSupportActionBar().setTitle(R.string.now_playing);
             String what = getIntent().getExtras().getString(Constants.SETTINGS_STYLE_SELECTOR_WHAT);
             Fragment fragment = StyleSelectorFragment.newInstance(what);
             FragmentManager fragmentManager = getSupportFragmentManager();

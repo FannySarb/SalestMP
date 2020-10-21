@@ -42,7 +42,7 @@ public class CreatePlaylistDialog extends DialogFragment {
     @NonNull
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-        return new MaterialDialog.Builder(getActivity()).positiveText("Create").negativeText("Cancel").input("Enter playlist name", "", false, new MaterialDialog.InputCallback() {
+        return new MaterialDialog.Builder(getActivity()).positiveText("Crear").negativeText("Cancelar").input("Nombre de la playlist", "", false, new MaterialDialog.InputCallback() {
             @Override
             public void onInput(@NonNull MaterialDialog dialog, CharSequence input) {
 
@@ -53,12 +53,12 @@ public class CreatePlaylistDialog extends DialogFragment {
                     if (songs != null && songs.length != 0)
                         MusicPlayer.addToPlaylist(getActivity(), songs, playistId);
                     else
-                        Toast.makeText(getActivity(), "Created playlist", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "Playlist creada", Toast.LENGTH_SHORT).show();
                     if (getParentFragment() instanceof PlaylistFragment) {
                         ((PlaylistFragment) getParentFragment()).updatePlaylists(playistId);
                     }
                 } else {
-                    Toast.makeText(getActivity(), "Unable to create playlist", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity(), "No se puede crear una lista de reproducción", Toast.LENGTH_SHORT).show();
                 }
 
             }

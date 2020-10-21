@@ -67,10 +67,11 @@
                     android:width="800dp"
                     android:ellipsize="marquee"
                     android:fadingEdge="horizontal"
+                    android:gravity="center"
                     android:marqueeRepeatLimit="marquee_forever"
                     android:scrollHorizontally="true"
                     android:singleLine="true"
-                    android:textSize="16sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/song_artist"
@@ -85,12 +86,12 @@
                     android:gravity="center"
                     android:maxLines="1"
                     android:paddingTop="3dp"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
             </LinearLayout>
 
             <SeekBar
                 android:id="@+id/song_progress"
-                android:layout_width="369dp"
+                android:layout_width="336dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:maxHeight="2dp"

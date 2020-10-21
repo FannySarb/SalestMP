@@ -41,7 +41,7 @@ import com.naman14.timber.utils.PreferencesUtility;
 public class SettingsFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {
 
     private static final String NOW_PLAYING_SELECTOR = "now_playing_selector";
-    private static final String LASTFM_LOGIN = "lastfm_login";
+  //  private static final String LASTFM_LOGIN = "lastfm_login";
 
     private static final String LOCKSCREEN = "show_albumart_lockscreen";
     private static final String XPOSED = "toggle_xposed_trackselector";
@@ -54,7 +54,7 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
     private static final String KEY_START_PAGE = "start_page_preference";
     private boolean lastFMlogedin;
 
-    private Preference nowPlayingSelector,  lastFMlogin, lockscreen, xposed;
+  //  private Preference nowPlayingSelector,  lastFMlogin, lockscreen, xposed;
 
     private SwitchPreference toggleAnimations;
     private ListPreference themePreference, startPagePreference;
@@ -69,17 +69,17 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
 
         mPreferences = PreferencesUtility.getInstance(getActivity());
 
-        lockscreen = findPreference(LOCKSCREEN);
-        nowPlayingSelector = findPreference(NOW_PLAYING_SELECTOR);
+      //  lockscreen = findPreference(LOCKSCREEN);
+        //nowPlayingSelector = findPreference(NOW_PLAYING_SELECTOR);
 
-        xposed = findPreference(XPOSED);
+    //    xposed = findPreference(XPOSED);
 
-        lastFMlogin = findPreference(LASTFM_LOGIN);
-        updateLastFM();
+        //lastFMlogin = findPreference(LASTFM_LOGIN);
+        //updateLastFM();
 //        themePreference = (ListPreference) findPreference(KEY_THEME);
         startPagePreference = (ListPreference) findPreference(KEY_START_PAGE);
 
-        nowPlayingSelector.setIntent(NavigationUtils.getNavigateToStyleSelectorIntent(getActivity(), Constants.SETTINGS_STYLE_SELECTOR_NOWPLAYING));
+       // nowPlayingSelector.setIntent(NavigationUtils.getNavigateToStyleSelectorIntent(getActivity(), Constants.SETTINGS_STYLE_SELECTOR_NOWPLAYING));
 
         setPreferenceClickListeners();
 
@@ -128,7 +128,7 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
 
 
 
-        xposed.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+        /*xposed.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
             public boolean onPreferenceChange(Preference preference, Object newValue) {
                 Bundle extras = new Bundle();
@@ -136,9 +136,9 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
                 mPreferences.updateService(extras);
                 return true;
             }
-        });
+        });*/
 
-        lastFMlogin.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+        /*lastFMlogin.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
             public boolean onPreferenceClick(Preference preference) {
                 if (lastFMlogedin) {
@@ -147,16 +147,11 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
                     extras.putString("lf_token","logout");
                     extras.putString("lf_user",null);
                     mPreferences.updateService(extras);
-                    updateLastFM();
-                } else {
-                    LastFmLoginDialog lastFmLoginDialog = new LastFmLoginDialog();
-                    lastFmLoginDialog.setTargetFragment(SettingsFragment.this, 0);
-                    lastFmLoginDialog.show(getFragmentManager(), LastFmLoginDialog.FRAGMENT_NAME);
-
+                    //updateLastFM();
                 }
                 return true;
             }
-        });
+        });*/
 
     }
 
@@ -236,17 +231,4 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
 
     }
 
-
-    public void updateLastFM() {
-        String username = LastFmClient.getInstance(getActivity()).getUsername();
-        if (username != null) {
-            lastFMlogedin = true;
-            lastFMlogin.setTitle("Logout");
-            lastFMlogin.setSummary(String.format(getString(R.string.lastfm_loged_in),username));
-        } else {
-            lastFMlogedin = false;
-            lastFMlogin.setTitle("Login");
-            lastFMlogin.setSummary(getString(R.string.lastfm_pref));
-        }
-    }
 }

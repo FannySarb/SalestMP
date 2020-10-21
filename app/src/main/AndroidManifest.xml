@@ -17,13 +17,13 @@
     <application
         android:name=".TimberApp"
         android:allowBackup="false"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher2"
         android:label="Salest Music Player"
         android:theme="@style/AppTheme.FullScreen.Light"
         tools:replace="android:allowBackup, android:label">
 
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".activities.splash"
             android:label="Salest Music Player"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -70,6 +70,10 @@
 
         <activity
             android:name=".activities.SettingsActivity"
+            android:theme="@style/AppThemeNormalLight" />
+
+        <activity
+            android:name=".activities.MainActivity"
             android:theme="@style/AppThemeNormalLight" />
 
         <activity
