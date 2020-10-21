@@ -90,7 +90,7 @@ public class MainFragment extends Fragment {
         Adapter adapter = new Adapter(getChildFragmentManager());
         adapter.addFragment(new SongsFragment(), this.getString(R.string.songs));
         //Fragment de Artistas
-         adapter.addFragment(new ArtistFragment(), this.getString(R.string.artists));
+        // adapter.addFragment(new ArtistFragment(), this.getString(R.string.artists));
         adapter.addFragment(new AlbumFragment(), this.getString(R.string.albums));
         viewPager.setAdapter(adapter);
     }
