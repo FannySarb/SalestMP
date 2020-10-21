@@ -18,8 +18,10 @@ import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.support.annotation.RequiresApi;
 import android.support.design.widget.AppBarLayout;
 import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v4.app.Fragment;
@@ -92,7 +94,8 @@ public class ArtistDetailFragment extends Fragment {
     /// ya no abre el apartado de artistas
 
     //@Override
-    /*public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(
                 R.layout.fragment_artist_detail, container, false);
 
@@ -113,7 +116,7 @@ public class ArtistDetailFragment extends Fragment {
 
 
         return rootView;
-    }*/
+    }
 
     private void setupToolbar() {
 
