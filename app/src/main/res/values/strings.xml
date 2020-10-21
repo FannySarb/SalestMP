@@ -18,17 +18,6 @@
     <string name="accessibility_repeat_one">Repeat one</string>
     <string name="accessibility_queue">Open queue</string>
     <string name="accessibility_browse">Browse music</string>
-
-    <string name="menu_sort_by">Sort by</string>
-    <string name="sort_order_entry_az">A-Z</string>
-    <string name="sort_order_entry_za">Z-A</string>
-    <string name="sort_order_entry_artist">Artist</string>
-    <string name="sort_order_entry_album">Album</string>
-    <string name="sort_order_entry_year">Year</string>
-    <string name="sort_order_entry_track_number">Track Number</string>
-    <string name="sort_order_entry_duration">Duration</string>
-    <string name="sort_order_entry_date_added">Date added</string>
-    <string name="sort_order_entry_track_list">Track list</string>
     <string name="sort_order_entry_number_of_songs">Number of songs</string>
     <string name="sort_order_entry_number_of_albums">Number of albums</string>
     <string name="sort_order_entry_filename">Filename</string>
@@ -148,7 +137,7 @@
     <string name="new_playlist">Nueva playlist</string>
     <string name="share">Share</string>
     <string name="delete_from_device">Delete from device</string>
-    <string name="remove_from_queue">Remove from queue</string>
+    <string name="remove_from_queue">Quitar de la cola</string>
 
     <string name="nothing_found">Sin Resultados</string>
     <string name="folders">Folders</string>

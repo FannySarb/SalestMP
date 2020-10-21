@@ -165,18 +165,18 @@ public class SearchAdapter extends BaseSongAdapter<SearchAdapter.ItemHolder> {
                         long[] song = new long[1];
                         song[0] = ((Song) searchResults.get(position)).id;
                         switch (item.getItemId()) {
-                            case R.id.popup_song_play:
+                           /* case R.id.popup_song_play:
                                 MusicPlayer.playAll(mContext, song, 0, -1, TimberUtils.IdType.NA, false);
-                                break;
+                                break;*/
                             /*case R.id.popup_song_play_next:
                                 MusicPlayer.playNext(mContext, song, -1, TimberUtils.IdType.NA);
                                 break;*/
                             case R.id.popup_song_goto_album:
                                 NavigationUtils.navigateToAlbum(mContext, ((Song) searchResults.get(position)).albumId, null);
                                 break;
-                            case R.id.popup_song_goto_artist:
+                            /*case R.id.popup_song_goto_artist:
                                 NavigationUtils.navigateToArtist(mContext, ((Song) searchResults.get(position)).artistId, null);
-                                break;
+                                break;*/
                             case R.id.popup_song_addto_queue:
                                 MusicPlayer.addToQueue(mContext, song, -1, TimberUtils.IdType.NA);
                                 break;

@@ -85,7 +85,7 @@ public class TimberApp extends MultiDexApplication {
                     .primaryColorRes(R.color.colorPrimaryDarkDefault)
                     .accentColorRes(R.color.colorAccentDarkDefault)
                     .coloredNavigationBar(false)
-                    .usingMaterialDialogs(true)
+                    .usingMaterialDialogs(false)
                     .commit();
         }
         if (!ATE.config(this, "light_theme_notoolbar").isConfigured()) {

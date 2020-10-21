@@ -105,15 +105,15 @@ public class PlayingQueueAdapter extends RecyclerView.Adapter<PlayingQueueAdapte
                                 removeSongAt(position);
                                 notifyItemRemoved(position);
                                 break;
-                            case R.id.popup_song_play:
+                           /* case R.id.popup_song_play:
                                 MusicPlayer.playAll(mContext, getSongIds(), position, -1, TimberUtils.IdType.NA, false);
-                                break;
+                                break;*/
                             case R.id.popup_song_goto_album:
                                 NavigationUtils.goToAlbum(mContext, arraylist.get(position).albumId);
                                 break;
-                            case R.id.popup_song_goto_artist:
+                            /*case R.id.popup_song_goto_artist:
                                 NavigationUtils.goToArtist(mContext, arraylist.get(position).artistId);
-                                break;
+                                break;*/
                             case R.id.popup_song_addto_playlist:
                                 AddPlaylistDialog.newInstance(arraylist.get(position)).show(((AppCompatActivity) mContext).getSupportFragmentManager(), "ADD_PLAYLIST");
                                 break;
