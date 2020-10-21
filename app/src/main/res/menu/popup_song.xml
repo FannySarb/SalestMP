@@ -3,17 +3,17 @@
 
     <item
         android:id="@+id/popup_song_remove_playlist"
-        android:title="Remove from playlist"
+        android:title="Eliminar de la playlist"
         android:visible="false"/>
 
 
     <item
         android:id="@+id/popup_song_addto_queue"
-        android:title="Cola de reproducción" />
+        android:title="Añadir a la cola" />
 
     <item
         android:id="@+id/popup_song_addto_playlist"
-        android:title="Añadir a PlayList" />
+        android:title="Añadir a Playlist" />
 
     <item
         android:id="@+id/popup_song_goto_album"
