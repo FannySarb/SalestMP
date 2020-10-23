@@ -163,7 +163,7 @@
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:scaleType="center"
                     app:materialIcon="skip_previous"
-                    app:materialIconColor="?attr/iconColor"
+                    app:materialIconColor="#FFFFFF"
                     app:materialIconSize="35dp" />
 
                 <FrameLayout
@@ -195,7 +195,7 @@
                     android:background="?attr/selectableItemBackgroundBorderless"
                     android:scaleType="center"
                     app:materialIcon="skip_next"
-                    app:materialIconColor="?attr/iconColor"
+                    app:materialIconColor="#FFFFFF"
                     app:materialIconSize="35dp" />
 
                 <ImageView
