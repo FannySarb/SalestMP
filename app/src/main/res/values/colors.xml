@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="window_background">#ffffff</color>
+    <color name="window_background">#140437</color>
     <color name="window_background_dark">#140437</color>
     <color name="window_background_black">#ffffff</color>
     <color name="bt_accent">#14dbd4</color>

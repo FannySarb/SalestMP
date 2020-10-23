@@ -34,22 +34,24 @@
 
             <TextView
                 android:id="@+id/album_title"
+                style="@style/TextAppearance.AppCompat.Body1"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textSize="16sp"
                 android:ellipsize="end"
                 android:singleLine="true"
-                style="@style/TextAppearance.AppCompat.Body1"/>
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/album_artist"
+                style="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:paddingTop="3dp"
-                android:textSize="13sp"
                 android:ellipsize="end"
+                android:paddingTop="3dp"
                 android:singleLine="true"
-                style="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+                android:textColor="#ffffff"
+                android:textSize="13sp" />
 
 
 
